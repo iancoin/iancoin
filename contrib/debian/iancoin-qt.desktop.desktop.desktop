@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=IanCoin
+Comment=IanCoin P2P Cryptocurrency
+Exec=iancoin-qt %u
+Terminal=false
+Type=Application
+Icon=iancoin128
+MimeType=x-scheme-handler/iancoin;
+Categories=Office;Finance;
+Name[ru]=iancoin-qt.desktop.desktop

@@ -1,0 +1,26 @@
+# /etc/conf.d/iancoind: config file for /etc/init.d/iancoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/iancoin/iancoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/iancoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/iancoind.pid"
+
+# Where to write iancoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/iancoind"
+
+# User and group to own iancoind process
+#BITCOIND_USER="iancoin"
+#BITCOIND_GROUP="iancoin"
+
+# Path to iancoind executable
+#BITCOIND_BIN="/usr/bin/iancoind"
+
+# Nice value to run iancoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

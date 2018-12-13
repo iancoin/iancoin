@@ -1,0 +1,26 @@
+[Unit]
+Description=IanCoin's distributed currency daemon
+After=network.target
+
+[Service]
+User=iancoin
+Group=iancoin
+
+Type=forking
+PIDFile=/var/lib/iancoind/iancoind.pid
+
+ExecStart=/usr/bin/iancoind -daemon -pid=/var/lib/iancoind/iancoind.pid \
+          -conf=/etc/iancoin/iancoin.conf -datadir=/var/lib/iancoind
+
+ExecStop=-/usr/bin/iancoin-cli -conf=/etc/iancoin/iancoin.conf \
+         -datadir=/var/lib/iancoind stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
