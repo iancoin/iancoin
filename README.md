@@ -2,7 +2,7 @@ IanCoin
 =====================================
 
 
-More information at [iancoin.net](https://ian-coin.co) join ou group at [Discord](https://discord.gg/mgURpVc).
+More information at [ian-coin.co](https://ian-coin.co) join ou group at [Discord](https://discord.gg/mgURpVc).
 
 ### Coin Specs
 
